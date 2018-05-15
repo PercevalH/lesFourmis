@@ -1,7 +1,8 @@
-<script> 
 
-class fourmis{
-	
+$(function(){
+	setInterval(function(){ let fourmisX = new Fourmis(); }, 3000);
+});
+
 var _role;
 var _pdv;
 var _force;
@@ -32,5 +33,7 @@ var _niveauReine;
 		this._cout = $cout;
 		this._niveauReine = $niveauReine;
 	}
+$(function(){
+	setInterval(function(){ let fourmisX = new Fourmis(); }, 3000);
+});
 }
-</script>
