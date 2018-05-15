@@ -16,11 +16,12 @@ let Fourmis = function(role, pdv, force, defense, img, tempsCreation, cout, nive
 	this._img = img;
 	this._tempsCreation = tempsCreation;
 	this._cout = cout;
+
 	this._niveauReine = niveauReine;
 }
-
 $.extend(Fourmis.prototype, {
       createFourmisD: function() {
+
         this._role = "ouvriere";
 		this._pdv = 100;
 		this._force = 2;
@@ -32,6 +33,15 @@ $.extend(Fourmis.prototype, {
       }
       
 });
+
+	}
+
+		this._niveauReine = niveauReine;
+	
+	function creerFourmi(role, pdv, force, defense, img, tempsCreation, cout, niveauReine){
+		
+	}
+
 $(function(){
 	
 	setInterval(function(){ 
