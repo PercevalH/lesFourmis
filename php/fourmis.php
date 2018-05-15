@@ -1,6 +1,7 @@
 <?php 
-
-class fourmis{
+session_start();
+$_SESSION['listFourmis'] = [];
+class Fourmis{
 	
 private $_role;
 private $_pdv;
@@ -11,7 +12,7 @@ private $_tempsCreation;
 private $_cout;
 private $_niveauReine;
 
-	function creerFourmi(){
+	/*function __construct(){
 		$this->_role = "ouvriere";
 		$this->_pdv = 10;
 		$this->_force = 2;
@@ -19,8 +20,8 @@ private $_niveauReine;
 		$this->_img = "";
 		$this->_tempsCreation = 10;
 		$this->_cout = 1;
-		this->_niveauReine = 1;
-	}
+		$this->_niveauReine = 1;
+	}*/
 	
 	function __construct($role, $pdv, $force, $defense, $img, $tempsCreation, $cout, $niveauReine){
 		$this->_role = $role;
@@ -30,9 +31,19 @@ private $_niveauReine;
 		$this->_img = $img;
 		$this->_tempsCreation = $tempsCreation;
 		$this->_cout = $cout;
-		this->_niveauReine = $niveauReine;
+		$this->_niveauReine = $niveauReine;
 	}
 }
+
+//$test->creerFourmi();
+$w2 = new EvTimer(0, 3, function () {
+	$test = new Fourmis("ouvriere", 10, 2, 5, "#", 10, 1, 1);
+	array_push($_SESSION['listFourmis'], $test);
+	var_dump($_SESSION['listFourmis']);
+});
+
+
+
 
 
 ?>

@@ -34,13 +34,8 @@ $.extend(Fourmis.prototype, {
       
 });
 
-	}
-
-		this._niveauReine = niveauReine;
 	
-	function creerFourmi(role, pdv, force, defense, img, tempsCreation, cout, niveauReine){
-		
-	}
+
 
 $(function(){
 	
