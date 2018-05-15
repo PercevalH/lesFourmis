@@ -1,17 +1,15 @@
-<script> 
-
-class fourmis{
+class Fourmis{
 	
-var _role;
-var _pdv;
-var _force;
-var _defense;
-var _img;
-var _tempsCreation;
-var _cout;
-var _niveauReine;
+let _role;
+let _pdv;
+let _force;
+let _defense;
+let _img;
+let _tempsCreation;
+let _cout;
+let _niveauReine;
 
-	function creerFourmi(){
+	function ouvriere(){
 		this._role = "ouvriere";
 		this._pdv = 10;
 		this._force = 2;
@@ -22,15 +20,14 @@ var _niveauReine;
 		this._niveauReine = 1;
 	}
 	
-	function __construct($role, $pdv, $force, $defense, $img, $tempsCreation, $cout, $niveauReine){
-		this._role = $role;
-		this._pdv = $pdv;
-		this._force = $force;
-		this._defense = $defense;
-		this._img = $img;
-		this._tempsCreation = $tempsCreation;
-		this._cout = $cout;
-		this._niveauReine = $niveauReine;
+	function construct(role, pdv, force, defense, img, tempsCreation, cout, niveauReine){
+		this._role = role;
+		this._pdv = pdv;
+		this._force = force;
+		this._defense = defense;
+		this._img = img;
+		this._tempsCreation = tempsCreation;
+		this._cout = cout;
+		this._niveauReine = niveauReine;
 	}
 }
-</script>
