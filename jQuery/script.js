@@ -1,5 +1,5 @@
 class Fourmis{
-	
+
 let _role;
 let _pdv;
 let _force;
@@ -9,9 +9,11 @@ let _tempsCreation;
 let _cout;
 let _niveauReine;
 
+
 	function ouvriere(){
+
 		this._role = "ouvriere";
-		this._pdv = 10;
+		this._pdv = 100;
 		this._force = 2;
 		this._defense = 5;
 		this._img = "#";
@@ -30,4 +32,14 @@ let _niveauReine;
 		this._cout = cout;
 		this._niveauReine = niveauReine;
 	}
-}
+
+		this._niveauReine = niveauReine;
+	}
+	
+	function creerFourmi(role, pdv, force, defense, img, tempsCreation, cout, niveauReine){
+		
+	}
+
+$(function(){
+	setInterval(function(){ let fourmisX = new Fourmis(); }, 3000);
+});
