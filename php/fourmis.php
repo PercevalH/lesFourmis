@@ -2,13 +2,14 @@
 session_start();
 $_SESSION['listFourmis'] = [];
 if(isset($_GET['nf'])){
+
 $nbFourmis = $_GET['nf'];
 }
 else{
 	$nbFourmis = 1;
 }
-
 class Fourmis{
+
 	
 private $_role;
 private $_pdv;
@@ -19,6 +20,8 @@ private $_tempsCreation;
 private $_cout;
 private $_niveauReine;
 	
+
+
 	function __construct($role, $pdv, $force, $defense, $img, $tempsCreation, $cout, $niveauReine){
 		$this->_role = $role;
 		$this->_pdv = $pdv;
@@ -38,6 +41,7 @@ $_SESSION['toJson'] = array(
 	"NbFourmis" => count($_SESSION['listFourmis'])
 );
 echo json_encode($_SESSION['toJson']);
+
 
 
 
