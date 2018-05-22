@@ -46,6 +46,13 @@ h1{
 	height:100%;
 }
 
+#menuAchat{
+	background-color: red;
+	overflow: auto; 
+	height: 100px;
+	border-left: 20px;
+}
+
 nav{
 	float:left;
 	width:10%;
@@ -81,6 +88,12 @@ main{
 	margin-top:2%;
 }
 
+#testoui{	
+	float: left;
+	height: 400px;	
+	overflow: auto;
+}
+
 .inputNum{
 	width:50px;
 }
@@ -99,3 +112,5 @@ footer{
 	height:20px;
 	margin-top:2%;
 }
+
+
