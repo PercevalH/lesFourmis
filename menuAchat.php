@@ -8,29 +8,12 @@
 
 </head>
 <body>
-	<header>
-	<ul id="ulHeader">
-	<li>Joueur : Pseudo</li>
-	<li>Amis</li>
-	<li>Options</li>
-	<li>Logout</li>
-	<li>Date</li>
-	</ul>
-	</header>
-	<div id="ressources">
-	<table id="tblRessources">
-		<tr><th>Nombre de Fourmis</th><th>Terre</th><th>Pierre</th><th>Nourriture</th></tr>
-		<tr><td id="nbFourmis">1</td><td>0</td><td>0</td><td>0</td></tr>		
-	</table>
-	</div>
-	<nav>
-	<ul class="list">
-	<li>Métiers</li>
-	<li>Ressources</li>
-	<li>Recherche</li>
-	<li>Camps</li>
-	</ul>
-	</nav>
+	<?php 
+	include("header.php");
+	include("ressources.php");
+	include("nav.php");
+	?>
+	
 	<main>
 	<div id="menu">
 		<table>
