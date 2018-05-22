@@ -25,17 +25,24 @@
 	</div>
 	<nav>
 	<ul class="list">
-	<li><a href="menuAchat.php">Métiers</a></li>
+	<li>Métiers</li>
 	<li>Ressources</li>
 	<li>Recherche</li>
 	<li>Camps</li>
 	</ul>
 	</nav>
 	<main>
-	
-	<h1>Bienvenue sur le jeux des fourmis vous avez une reine pour commencer !</h1>
-		<h2>Vous allez recevoir des fourmis toutes les 3 secondes</h2>
-	
+	<div id="testoui">
+		<table>
+		<?php 
+		for($i = 0; $i < 21; $i++){
+		?>
+		<tr>
+			<td>test.bat</td>
+		</tr>
+		<?php }?>
+		</table>
+	</div>
 	</main>
 	<footer>LeGroupeDesFourmis © 2018 - CFPT Informatique - Genève</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
