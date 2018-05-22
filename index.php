@@ -13,7 +13,7 @@
 	<li>Joueur : Pseudo</li>
 	<li>Amis</li>
 	<li>Options</li>
-	<li>Logout</li>
+	<button id="btnThomas">Logout</button>
 	<li>Date</li>
 	</ul>
 	</header>

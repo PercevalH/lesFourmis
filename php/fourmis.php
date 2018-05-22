@@ -1,12 +1,15 @@
 <?php 
 session_start();
 $_SESSION['listFourmis'] = [];
-if(isset($_GET['nf'])){
+if(isset($_POST['nbFourmis'])){
 
-$nbFourmis = $_GET['nf'];
+$nbFourmis = $_POST['nbFourmis'];
+echo $nbFourmis;
+
 }
 else{
 	$nbFourmis = 1;
+	echo "no var";
 }
 class Fourmis{
 

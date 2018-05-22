@@ -7,7 +7,6 @@ let _tempsCreation;
 let _cout;
 let _niveauReine;
 let listFourmis = [];
-let nbFourmis=0;
 
 let Fourmis = function(role, pdv, force, defense, img, tempsCreation, cout, niveauReine) {
     this._role = role;
@@ -34,27 +33,29 @@ $.extend(Fourmis.prototype, {
       }
       
 });
-function init()
-{
-		$.get("./php/fourmis.php",function(data){
-			let donnees = JSON.parse(data);				
-			let nbFourmis = donnees.NbFourmis;
-				
-		});
-}
 
 	
 
-
 $(function(){
-	init();
+	
 	setInterval(function(){ 
-		nbFourmis+= 1;
-		$("#nbFourmis").html(nbFourmis);
+		let fourmis = new Fourmis();
+		listFourmis.push(fourmis);
+		$("#nbFourmis").html(listFourmis.length);
 		}, 3000);
-	$("#btnDisconnect").click(function(){
-		xmlhttp.open("GET","fourmis.php?nf="+nbFourmis,true);
-		xmlhttp.send();
+	$("#btnThomas").on("click",function(){
+		console.log("click");
+		
+		$.ajax({
+                    type: "POST",
+                    url: './php/fourmis.php',
+                    data: {"nbFourmis": 20},
+                    success: function(data)
+                    {
+                       alert("success! Fourmis:" + data);
+                    }
+
+        });
 	});
 	
 });
