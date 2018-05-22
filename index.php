@@ -32,7 +32,7 @@ require_once("functions.php");
 	</div>
 	<nav>
 	<ul class="list">
-	<li>Métiers</li>
+	<li> <a href="menuAchat.php">Métiers</a></li>
 	<li>Ressources</li>
 	<li>Recherche</li>
 	<li>Camps</li>
