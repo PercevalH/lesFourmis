@@ -118,6 +118,24 @@ main{
 	width: 60px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: lightgrey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: maroon; 
+}
 
 .inputNum{
 	width:50px;
