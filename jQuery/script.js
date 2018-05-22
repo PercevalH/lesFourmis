@@ -33,21 +33,25 @@ $.extend(Fourmis.prototype, {
       }
       
 });
+function init()
+{
+		$.get("fourmis.php",function(data){
+			let donnees = JSON.parse(data);				
+			let nbFourmis = donnees.nbFourmis.length;
+				
+		});
+}
 
-	}
-
-		this._niveauReine = niveauReine;
-	
-	function creerFourmi(role, pdv, force, defense, img, tempsCreation, cout, niveauReine){
-		
-	}
 
 $(function(){
 	
 	setInterval(function(){ 
-		let fourmis = new Fourmis("ouvriere", 100, 2, 5, "#", 10, 1, 1);
-		listFourmis.push(fourmis);
-		$("#nbFourmis").html(listFourmis.length);
+		nbFourmis+= 1;
+		$("#nbFourmis").html(nbFourmis);
 		}, 3000);
+	$("#btnDisconnect").click(function(){
+		xmlhttp.open("GET","fourmis.php?nf="+nbFourmis,true);
+		xmlhttp.send();
+	});
 	
 });
