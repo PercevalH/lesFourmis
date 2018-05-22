@@ -32,7 +32,7 @@
 	</ul>
 	</nav>
 	<main>
-	<div id="testoui">
+	<div id="menu">
 		<table>
 		<?php 
 		for($i = 0; $i < 21; $i++){
