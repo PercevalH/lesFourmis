@@ -38,7 +38,11 @@
 		for($i = 0; $i < 21; $i++){
 		?>
 		<tr>
+		<?php if($i%2 == 0){ ?>
 			<td  rowspan="2" ><img src="./images/fourmi.png"></img></td>
+		<?php } else{ ?> 
+		<td  rowspan="2" ><img src="./images/fourmiRouge.png"></img></td>
+		<?php } ?>
 			<td  rowspan="2">Nom de la fourmi! </td>			
 			<td>Prix: 18 ressoures !</td>	
 			<td rowspan="2">
