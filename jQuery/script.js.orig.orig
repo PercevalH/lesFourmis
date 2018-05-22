@@ -7,7 +7,10 @@ let _tempsCreation;
 let _cout;
 let _niveauReine;
 let listFourmis = [];
+<<<<<<< HEAD
 let nbFourmis=0;
+=======
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 
 let Fourmis = function(role, pdv, force, defense, img, tempsCreation, cout, niveauReine) {
     this._role = role;
@@ -34,6 +37,7 @@ $.extend(Fourmis.prototype, {
       }
       
 });
+<<<<<<< HEAD
 function init()
 {
 		$.get("./php/fourmis.php",function(data){
@@ -42,15 +46,30 @@ function init()
 				
 		});
 }
+=======
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 
 	
 
 
 $(function(){
+<<<<<<< HEAD
 	init();
 	setInterval(function(){ 
 		nbFourmis+= 1;
 		$("#nbFourmis").html(nbFourmis);
 		}, 3000);
+	$("#btnDisconnect").click(function(){
+		xmlhttp.open("GET","fourmis.php?nf="+nbFourmis,true);
+		xmlhttp.send();
+	});
+=======
+	
+	setInterval(function(){ 
+		let fourmis = new Fourmis("ouvriere", 100, 2, 5, "#", 10, 1, 1);
+		listFourmis.push(fourmis);
+		$("#nbFourmis").html(listFourmis.length);
+		}, 3000);
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 	
 });

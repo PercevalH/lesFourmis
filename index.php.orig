@@ -1,9 +1,12 @@
+<<<<<<< HEAD
+=======
 <?php 
 require_once("functions.php");
  
 
 ?>
 
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 <!DOCTYPE html>
 
 <html lang="fr">
@@ -16,6 +19,16 @@ require_once("functions.php");
 <body>
 	<header>
 	<ul id="ulHeader">
+<<<<<<< HEAD
+	<li>Joueur : Pseudo</li>
+	<li>Amis</li>
+	<li>Options</li>
+	<li>Logout</li>
+	<li>Date</li>
+	</ul>
+	</header>
+	<div id="ressources">
+=======
 	<li>Joueur : <?php if(IsLogged()){echo $_SESSION["pseudo"];} ?></li>
 	<li><?php include("logoutForm.php"); ?></li>
 	<li><?php echo date("d-m-Y H:i");?></li>
@@ -25,6 +38,7 @@ require_once("functions.php");
      
 	 ?>
 	 <div id="ressources">
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 	<table id="tblRessources">
 		<tr><th>Nombre de Fourmis</th><th>Terre</th><th>Pierre</th><th>Nourriture</th></tr>
 		<tr><td id="nbFourmis">1</td><td>0</td><td>0</td><td>0</td></tr>		
@@ -32,7 +46,11 @@ require_once("functions.php");
 	</div>
 	<nav>
 	<ul class="list">
+<<<<<<< HEAD
+	<li><a href="menuAchat.php">Métiers</a></li>
+=======
 	<li>Métiers</li>
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 	<li>Ressources</li>
 	<li>Recherche</li>
 	<li>Camps</li>
@@ -44,6 +62,8 @@ require_once("functions.php");
 		<h2>Vous allez recevoir des fourmis toutes les 3 secondes</h2>
 	
 	</main>
+<<<<<<< HEAD
+=======
 	 <?php
 	 
 	}else{     
@@ -54,6 +74,7 @@ require_once("functions.php");
 	
 	?>
 	
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 	<footer>LeGroupeDesFourmis © 2018 - CFPT Informatique - Genève</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./jQuery/script.js"></script>

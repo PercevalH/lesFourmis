@@ -1,0 +1,147 @@
+*{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+header{
+	background-color:grey;
+	color:white;
+	float:left;
+	width:100%;
+	height:40px;
+}
+
+h1{
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+#ulHeader{
+	width:80%;
+	margin-left:10%;
+}
+#ulHeader li{
+	list-style:none;
+	width:15%;
+	margin-left:5%;
+	margin-top:0.5%;
+	float:left;
+}
+#ressources{
+	background-color:grey;
+	float:left;
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:2%;
+	width:60%;
+	height:100px;
+}
+#tblRessources{
+	background-color:grey;
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+
+nav{
+	float:left;
+	width:10%;
+	height:400px;
+	margin-left:2%;
+	margin-top:2%;
+
+}
+.list {
+	height:100%;
+}
+.list li:hover{
+	background-color:grey;
+}
+.list li{
+	list-style:none;
+	width:99%;
+	height:17%;
+	border:1px black solid;
+	line-height: 400%;
+	margin-top:2%;
+	text-align:center;
+	vertical-align:middle;
+	
+}
+main{
+	background-color:grey;
+	float:left;
+	width:74%;
+	height:400px;
+	margin-left:1%;
+	margin-right:1%;
+	margin-top:2%;
+}
+
+<<<<<<< HEAD
+#menu{	
+	float: left;
+	height: 400px;
+	width: 100%;	
+	overflow: auto;
+}
+
+#menu table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#menu table tr td{	
+	border: solid 1px black;
+}
+
+#menu table tr td{	
+	padding: 3px;
+}
+
+#menu img{
+	height: 100px;
+	width: 100px;
+	border: solid 1px black;
+}
+
+#inputAchatFourmi{
+	
+	width: 60px;
+}
+
+#btnAchatFourmi{
+	margin-left: 5px;
+	height: 30px;
+	width: 60px;
+}
+
+
+=======
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
+.inputNum{
+	width:50px;
+}
+aside{
+	float:left;
+	width:10%;
+	height:400px;
+	margin-right:2%;
+	margin-top:2%;	
+}
+
+footer{
+	background-color:grey;
+	float:left;
+	width:100%;
+	height:20px;
+	margin-top:2%;
+}
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
