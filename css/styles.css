@@ -46,13 +46,6 @@ h1{
 	height:100%;
 }
 
-#menuAchat{
-	background-color: red;
-	overflow: auto; 
-	height: 100px;
-	border-left: 20px;
-}
-
 nav{
 	float:left;
 	width:10%;
@@ -90,9 +83,41 @@ main{
 
 #menu{	
 	float: left;
-	height: 400px;	
+	height: 400px;
+	width: 100%;	
 	overflow: auto;
 }
+
+#menu table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#menu table tr td{	
+	border: solid 1px black;
+}
+
+#menu table tr td{	
+	padding: 3px;
+}
+
+#menu img{
+	height: 100px;
+	width: 100px;
+	border: solid 1px black;
+}
+
+#inputAchatFourmi{
+	
+	width: 60px;
+}
+
+#btnAchatFourmi{
+	margin-left: 5px;
+	height: 30px;
+	width: 60px;
+}
+
 
 .inputNum{
 	width:50px;

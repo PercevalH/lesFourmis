@@ -7,6 +7,7 @@ let _tempsCreation;
 let _cout;
 let _niveauReine;
 let listFourmis = [];
+let nbFourmis=0;
 
 let Fourmis = function(role, pdv, force, defense, img, tempsCreation, cout, niveauReine) {
     this._role = role;
@@ -35,9 +36,9 @@ $.extend(Fourmis.prototype, {
 });
 function init()
 {
-		$.get("fourmis.php",function(data){
+		$.get("./php/fourmis.php",function(data){
 			let donnees = JSON.parse(data);				
-			let nbFourmis = donnees.nbFourmis.length;
+			let nbFourmis = donnees.NbFourmis;
 				
 		});
 }
@@ -46,7 +47,7 @@ function init()
 
 
 $(function(){
-	
+	init();
 	setInterval(function(){ 
 		nbFourmis+= 1;
 		$("#nbFourmis").html(nbFourmis);

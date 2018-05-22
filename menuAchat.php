@@ -38,8 +38,15 @@
 		for($i = 0; $i < 21; $i++){
 		?>
 		<tr>
-			<td>test.bat</td>
+			<td  rowspan="2" ><img src="./images/fourmi.png"></img></td>
+			<td  rowspan="2">Nom de la fourmi! </td>			
+			<td>prix: 18ressoures !</td>	
+			<td rowspan="2"><input type="number" id="inputAchatFourmi" ><input type="submit" id="btnAchatFourmi" value="Acheter"></td>			
+		<tr>
+			<td>temps de création: 3sec!</td>
+		</tr>			
 		</tr>
+
 		<?php }?>
 		</table>
 	</div>
