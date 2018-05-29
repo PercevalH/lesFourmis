@@ -9,7 +9,7 @@ require_once("functions.php");
 	<div id="ressources">
 		<table id="tblRessources">
 			<tr><th>Nombre de Fourmis</th><th>Terre</th><th>Pierre</th><th>Nourriture</th></tr>
-			<tr><td id="nbFourmis">1</td><td>0</td><td>0</td><td>0</td></tr>		
+			<tr><td id="nbFourmis">1</td><td id="nbTerre">0</td><td id="nbPierre">0</td><td id="nbNourriture">0</td></tr>		
 		</table>
 	</div>
 	

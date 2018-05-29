@@ -7,6 +7,22 @@ let _tempsCreation;
 let _cout;
 let _niveauReine;
 let listFourmis = [];
+let nbFourmis=0;
+let nbTerre = 0;
+let nbPierre = 0;
+let nbNourriture = 0;
+let multiplicateurTerre = 0.15;
+let multiplicateurPierre = 0.15;
+let multiplicateurNourriture = 0.15;
+
+
+let nbTerre = 0;
+let nbPierre = 0;
+let nbNourriture = 0;
+let multiplicateurTerre = 0.15;
+let multiplicateurPierre = 0.15;
+let multiplicateurNourriture = 0.15;
+
 
 let Fourmis = function(role, pdv, force, defense, img, tempsCreation, cout, niveauReine) {
     this._role = role;
@@ -33,15 +49,32 @@ $.extend(Fourmis.prototype, {
       }
       
 });
+function init()
+
+{
+		$.get("./php/fourmis.php",function(data){
+			let donnees = JSON.parse(data);				
+			let nbFourmis = donnees.NbFourmis;
+				
+		});
+}
+
+
 
 	
-
 $(function(){
 	
 	setInterval(function(){ 
 		let fourmis = new Fourmis();
-		listFourmis.push(fourmis);
-		$("#nbFourmis").html(listFourmis.length);
+		
+		nbTerre+= Math.floor(multiplicateurTerre * nbFourmis);		
+		nbPierre+= Math.floor(multiplicateurPierre * nbFourmis);
+		nbNourriture+= Math.floor(multiplicateurNourriture * nbFourmis);
+		
+		$("#nbTerre").html(nbTerre);
+		$("#nbFourmis").html(nbFourmis);
+		$("#nbPierre").html(nbPierre);
+		$("#nbNourriture").html(nbNourriture);
 		}, 3000);
 
 	$("#btnThomas").on("click",function(){
@@ -60,3 +93,6 @@ $(function(){
 	});
 	
 });
+
+
+
