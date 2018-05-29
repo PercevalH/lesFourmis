@@ -58,6 +58,7 @@ $(function(){
 	
 	setInterval(function(){ 
 		let fourmis = new Fourmis();
+		nbFourmis+= 1;
 		
 		nbTerre+= Math.floor(multiplicateurTerre * nbFourmis);		
 		nbPierre+= Math.floor(multiplicateurPierre * nbFourmis);
