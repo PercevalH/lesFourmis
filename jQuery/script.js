@@ -16,14 +16,6 @@ let multiplicateurPierre = 0.15;
 let multiplicateurNourriture = 0.15;
 
 
-let nbTerre = 0;
-let nbPierre = 0;
-let nbNourriture = 0;
-let multiplicateurTerre = 0.15;
-let multiplicateurPierre = 0.15;
-let multiplicateurNourriture = 0.15;
-
-
 let Fourmis = function(role, pdv, force, defense, img, tempsCreation, cout, niveauReine) {
     this._role = role;
 	this._pdv = pdv;
