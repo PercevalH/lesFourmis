@@ -7,6 +7,17 @@ let _tempsCreation;
 let _cout;
 let _niveauReine;
 let listFourmis = [];
+<<<<<<< HEAD
+=======
+let nbFourmis=0;
+let nbTerre = 0;
+let nbPierre = 0;
+let nbNourriture = 0;
+let multiplicateurTerre = 0.15;
+let multiplicateurPierre = 0.15;
+let multiplicateurNourriture = 0.15;
+
+>>>>>>> gagner des ressources en fonction des multiplicateurs de ressources
 
 let Fourmis = function(role, pdv, force, defense, img, tempsCreation, cout, niveauReine) {
     this._role = role;
@@ -33,30 +44,63 @@ $.extend(Fourmis.prototype, {
       }
       
 });
+<<<<<<< HEAD
+
+	
+=======
 function init()
+
 {
-		$.get("fourmis.php",function(data){
+		$.get("./php/fourmis.php",function(data){
 			let donnees = JSON.parse(data);				
-			let nbFourmis = donnees.nbFourmis.length;
+			let nbFourmis = donnees.NbFourmis;
 				
 		});
 }
 
-<<<<<<< HEAD
-=======
-	
-
->>>>>>> 60efb7cd0a8ca5a2166d3b7b12f508f36fd2b53f
+>>>>>>> gagner des ressources en fonction des multiplicateurs de ressources
 
 $(function(){
 	
 	setInterval(function(){ 
+<<<<<<< HEAD
+		let fourmis = new Fourmis();
+		listFourmis.push(fourmis);
+		$("#nbFourmis").html(listFourmis.length);
+=======
 		nbFourmis+= 1;
+		
+		nbTerre+= Math.floor(multiplicateurTerre * nbFourmis);		
+		nbPierre+= Math.floor(multiplicateurPierre * nbFourmis);
+		nbNourriture+= Math.floor(multiplicateurNourriture * nbFourmis);
+		
+		$("#nbTerre").html(nbTerre);
 		$("#nbFourmis").html(nbFourmis);
+		$("#nbPierre").html(nbPierre);
+		$("#nbNourriture").html(nbNourriture);
+>>>>>>> gagner des ressources en fonction des multiplicateurs de ressources
 		}, 3000);
-	$("#btnDisconnect").click(function(){
-		xmlhttp.open("GET","fourmis.php?nf="+nbFourmis,true);
-		xmlhttp.send();
+
+	$("#btnThomas").on("click",function(){
+		console.log("click");
+		
+		$.ajax({
+                    type: "POST",
+                    url: './php/fourmis.php',
+                    data: {"nbFourmis": 20},
+                    success: function(data)
+                    {
+                       alert("success! Fourmis:" + data);
+                    }
+
+        });
 	});
 	
+<<<<<<< HEAD
 });
+=======
+});
+
+
+
+>>>>>>> gagner des ressources en fonction des multiplicateurs de ressources
