@@ -8,29 +8,12 @@
 
 </head>
 <body>
-	<header>
-	<ul id="ulHeader">
-	<li>Joueur : Pseudo</li>
-	<li>Amis</li>
-	<li>Options</li>
-	<li>Logout</li>
-	<li>Date</li>
-	</ul>
-	</header>
-	<div id="ressources">
-	<table id="tblRessources">
-		<tr><th>Nombre de Fourmis</th><th>Terre</th><th>Pierre</th><th>Nourriture</th></tr>
-		<tr><td id="nbFourmis">1</td><td>0</td><td>0</td><td>0</td></tr>		
-	</table>
-	</div>
-	<nav>
-	<ul class="list">
-	<li>Métiers</li>
-	<li>Ressources</li>
-	<li>Recherche</li>
-	<li>Camps</li>
-	</ul>
-	</nav>
+	<?php 
+	include("header.php");
+	include("ressources.php");
+	include("nav.php");
+	?>
+	
 	<main>
 	<div id="menu">
 		<table>
@@ -38,15 +21,21 @@
 		for($i = 0; $i < 21; $i++){
 		?>
 		<tr>
+		<?php if($i%2 == 0){ ?>
 			<td  rowspan="2" ><img src="./images/fourmi.png"></img></td>
+		<?php } else{ ?> 
+		<td  rowspan="2" ><img src="./images/fourmiRouge.png"></img></td>
+		<?php } ?>
 			<td  rowspan="2">Nom de la fourmi! </td>			
-			<td>prix: 18ressoures !</td>	
-			<td rowspan="2"><input type="number" id="inputAchatFourmi" ><input type="submit" id="btnAchatFourmi" value="Acheter"></td>			
+			<td>Prix: 18 ressoures !</td>	
+			<td rowspan="2">
+				<input type="number" id="inputAchatFourmi" >
+				<input type="submit" id="btnAchatFourmi" value="Acheter">
+			</td>			
 		<tr>
-			<td>temps de création: 3sec!</td>
+			<td>Temps de création: 3sec!</td>
 		</tr>			
 		</tr>
-
 		<?php }?>
 		</table>
 	</div>

@@ -81,6 +81,7 @@ main{
 	margin-top:2%;
 }
 
+<<<<<<< HEAD
 #menu{	
 	float: left;
 	height: 400px;
@@ -118,25 +119,9 @@ main{
 	width: 60px;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: lightgrey; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: black; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: maroon; 
-}
-
+=======
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 .inputNum{
 	width:50px;
 }
@@ -155,5 +140,8 @@ footer{
 	height:20px;
 	margin-top:2%;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)

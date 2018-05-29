@@ -3,15 +3,17 @@ session_start();
 $_SESSION['listFourmis'] = [];
 <<<<<<< HEAD
 if(isset($_GET['nf'])){
+
 $nbFourmis = $_GET['nf'];
 }
 else{
 	$nbFourmis = 1;
 }
+class Fourmis{
 
 =======
->>>>>>> 60efb7cd0a8ca5a2166d3b7b12f508f36fd2b53f
 class Fourmis{
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 	
 private $_role;
 private $_pdv;
@@ -22,6 +24,9 @@ private $_tempsCreation;
 private $_cout;
 private $_niveauReine;
 <<<<<<< HEAD
+	
+
+
 =======
 
 	/*function __construct(){
@@ -34,8 +39,8 @@ private $_niveauReine;
 		$this->_cout = 1;
 		$this->_niveauReine = 1;
 	}*/
->>>>>>> 60efb7cd0a8ca5a2166d3b7b12f508f36fd2b53f
 	
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 	function __construct($role, $pdv, $force, $defense, $img, $tempsCreation, $cout, $niveauReine){
 		$this->_role = $role;
 		$this->_pdv = $pdv;
@@ -47,6 +52,7 @@ private $_niveauReine;
 		$this->_niveauReine = $niveauReine;
 	}
 }
+<<<<<<< HEAD
 for($i = 0;$i<$nbFourmis;$i++){
 $fourmis = new Fourmis("ouvriere", 10, 2, 5, "#", 10, 1, 1);
 array_push($_SESSION['listFourmis'], $fourmis);
@@ -55,8 +61,7 @@ $_SESSION['toJson'] = array(
 	"NbFourmis" => count($_SESSION['listFourmis'])
 );
 echo json_encode($_SESSION['toJson']);
-
-
+=======
 
 //$test->creerFourmi();
 $w2 = new EvTimer(0, 3, function () {
@@ -64,6 +69,7 @@ $w2 = new EvTimer(0, 3, function () {
 	array_push($_SESSION['listFourmis'], $test);
 	var_dump($_SESSION['listFourmis']);
 });
+>>>>>>> Ajout des fichiers php nécessaires pour la connexion à la base de données (Création de compte + connexion)
 
 
 

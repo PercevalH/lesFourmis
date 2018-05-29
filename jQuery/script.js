@@ -43,6 +43,7 @@ $(function(){
 		listFourmis.push(fourmis);
 		$("#nbFourmis").html(listFourmis.length);
 		}, 3000);
+
 	$("#btnThomas").on("click",function(){
 		console.log("click");
 		

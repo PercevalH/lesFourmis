@@ -12,7 +12,7 @@ else{
 	echo "no var";
 }
 class Fourmis{
-
+	
 	
 private $_role;
 private $_pdv;
